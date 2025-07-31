@@ -49,15 +49,11 @@ To assess the performance of each model, I used:
 - **Confusion Matrix**: Shows counts of true positives, false positives, true negatives, and false negatives.
 
 - **True Positive Rate (Recall for AML)**:  
-  \[
-  TPR = \frac{TP}{TP + FN}
-  \]
+  TPR = TP/(TP + FN)
   Measures how well the model identifies AML patients.
 
 - **True Negative Rate (Specificity for ALL)**:  
-  \[
-  TNR = \frac{TN}{TN + FP}
-  \]
+  TNR = TN/(TN + FP)
   Measures how well the model correctly identifies ALL patients.
 
 ---
@@ -65,8 +61,6 @@ To assess the performance of each model, I used:
 ## 📊 5. Results Summary
 
 The models trained using **t-test-selected genes** achieved higher classification performance than those using PCA-reduced components. Among classifiers, `Logistic Regression` and `SVM` yielded the best accuracy, followed closely by `Naive Bayes`.
-
-> (You can insert specific numbers below once available.)
 
 - Logistic Regression Accuracy: 0.765
 - SVM Accuracy: 0.794
